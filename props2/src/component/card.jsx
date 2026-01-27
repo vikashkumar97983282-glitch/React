@@ -21,7 +21,7 @@ function Card(){
             
             <div className="bottom">
                 <div>
-                    <h3>rs:1500rs</h3>
+                    <h3>$150-200k</h3>
                     <p>Mountaion view, CA</p>
                 </div>
                 <button>Apply now</button>

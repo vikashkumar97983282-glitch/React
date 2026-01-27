@@ -1,8 +1,12 @@
 .card{
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
+    margin: 20px 10px;
     border-radius: 20px;
-    background-color: rgb(152, 236, 211);
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); 
+
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 1px solid #dadada;
+    border: 2px solid #b5b3b3;
     padding: 2px;
     color: #b1b1b1;
 }
@@ -54,17 +58,18 @@
 }
 
 .center .tag button{
-    color: brown;
-    background-color: burlywood;
+    color: rgb(0, 0, 0);
+    background-color:#3aa5b5;
+    border: 1px solid white;
     margin-right: 5px;
     border-radius: 5px;
 }
 
 .center h3 span{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
-    color: blue;
-    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    margin-left: 11px;
 }
 
 .bottom{
@@ -78,7 +83,7 @@
 .bottom button{
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 7px;
     border: none;
     border-radius: 5px;
     column-width: 600;
