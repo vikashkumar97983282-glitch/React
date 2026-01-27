@@ -2,7 +2,7 @@ import "./card.css"
 
 import React from "react";
 
-const container = (props)=> {
+const Container = (props)=> {
 
     console.log(props.user)
 
@@ -11,11 +11,11 @@ const container = (props)=> {
         <div className="cont">
         <img src={props.img}></img>
         <h1>{props.user}</h1>
-        <h2>B Tech (computer engineer)</h2>
+        <h2>{props.dept}</h2>
         <p>I am interested in {props.skill}</p>
         <button>view profile</button>
         </div>
     )
 }
 
-export default container;
+export default Container;
