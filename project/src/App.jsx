@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import Login from "./Login/login"
+
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1>hello world</h1>
+      <div className='app'>
+        <Login/>
       </div>
     </>
   )

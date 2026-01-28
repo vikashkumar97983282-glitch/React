@@ -1,0 +1,81 @@
+.login{
+    height: 550px;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background: #59C173; 
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173); 
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+
+
+}
+
+.content{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+}
+
+.content a{
+    margin-left: 5.5rem;
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+    background-color: transparent;
+    border: 2px solid royalblue;
+}
+
+.content h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.data{
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border-color: #1111;
+    margin-bottom: 20px;
+}
+
+.content .input .text{
+    height: 40px;
+    align-items: center;
+}
+
+.content button{
+    margin-left: 7rem;
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+}
+
+.box{
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    border-radius: 10px;
+
+}
