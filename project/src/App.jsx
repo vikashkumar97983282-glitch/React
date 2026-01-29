@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Login from "./Login/login"
 
 
-function App() {
+const App = ()=> {
 
   return (
     <>
