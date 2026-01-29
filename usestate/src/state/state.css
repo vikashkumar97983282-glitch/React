@@ -1,0 +1,21 @@
+
+/* .st{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.st h1{
+    font-size: 80px;
+}
+
+.st button{
+    margin: 10px;
+    background-color: rgb(235, 111, 10);
+    color: black;
+    height: 40px;
+    width: 200px;
+}
