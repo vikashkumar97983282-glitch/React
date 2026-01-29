@@ -1,4 +1,4 @@
-import { useActionState, useState } from 'react';
+import {useState } from 'react';
 import './state.css'
 
 const State = ()=>{
@@ -21,6 +21,15 @@ const State = ()=>{
         setNum(num-5);
     }
 
+    const [user,setUser] = useState({name:"vikash",age:20})
+
+    const changeuser =()=>{
+        const newuser={...user};
+        newuser.name="rahul";
+        newuser.age=30;
+        setUser(newuser);
+    }
+
 
     return(
         <div className='st'>
@@ -29,6 +38,9 @@ const State = ()=>{
             <button onClick={Decrement}>Decrement</button>
             <button onClick={jumpup}>jumpup</button>
             <button onClick={jumpback}>jumpback</button>
+
+            <h1>my name is {user.name}. and i am {user.age} years old.</h1>
+            <button onClick={changeuser}>changeuser</button>
         </div>
     )
 }
