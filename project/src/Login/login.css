@@ -1,4 +1,4 @@
-.login{
+.container{
     height: 550px;
     width: 600px;
     margin-top: 50px;
@@ -82,4 +82,12 @@ background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
     align-items: center;
     border-radius: 10px;
 
+}
+
+
+.content p{
+    text-align: center;
+    color: rgb(5, 26, 218);
+    font-size: 24px;
+    font-weight: 600;
 }
