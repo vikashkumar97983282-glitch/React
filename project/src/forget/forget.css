@@ -1,19 +1,48 @@
 .forg{
-    height: 550px;
+    height: 515px;
     width: 600px;
     background-color: aqua;
-    margin-top: 10px;
+
     justify-content: center;
     display: flex;
     align-items: center;
+    border-radius: 30px;
 }
 
 .forcont{
+    justify-content: center;
+    align-items: center;
+
 
 }
 
 .forcont input{
-    height: 40px;
-    width: 250px;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
 }
 
+
+.forcont button{
+    height: 40px;
+    width: 90px;
+    margin-left: 105px;
+    margin-top: 15px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.image{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.image img{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    margin-bottom: 45px;
+}

@@ -38,7 +38,7 @@ function Login(){
                     <br/>
                     <input className="box" id="check" type="checkbox"/>
                     <label htmlFor="check">Remember me</label>
-                    <a href="#">Forget password</a>
+                    <a href="/forget">Forget password</a>
                     <br/>
                     <br/>
                     <button type="submit">Login</button>
