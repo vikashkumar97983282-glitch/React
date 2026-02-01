@@ -10,7 +10,7 @@ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, F
 .app{
     align-items: center;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     background: #5a0237;
 

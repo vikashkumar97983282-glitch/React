@@ -1,0 +1,19 @@
+.forg{
+    height: 550px;
+    width: 600px;
+    background-color: aqua;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.forcont{
+
+}
+
+.forcont input{
+    height: 40px;
+    width: 250px;
+}
+
