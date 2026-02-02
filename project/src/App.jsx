@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Login from "./Login/login"
 import Forget from './forget/forget'
 
@@ -8,8 +7,8 @@ const App = ()=> {
   return (
     <>
       <div className='app'>
-        {/* <Login/> */}
-        <Forget/>
+        <Login/>
+        {/* <Forget/> */}
       </div>
     </>
   )
