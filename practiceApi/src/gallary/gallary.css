@@ -1,8 +1,29 @@
+.cont{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1111;
+
+}
+.cont button{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(243, 227, 5);
+    color: rgb(10, 10, 10);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
 .parent{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.parent a{
+    text-decoration: none;
 }
 
 
@@ -16,4 +37,13 @@
     width: 400px;
     margin: 10px;
     border-radius: 20px;
+}
+
+.cont h2{
+    margin: 12px;
+    color: rgb(216, 2, 109);
+}
+
+h3{
+    color: blueviolet;
 }
