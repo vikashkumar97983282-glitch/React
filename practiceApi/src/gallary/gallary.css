@@ -1,0 +1,19 @@
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgcont{
+  align-items: center;
+  justify-items: center;
+}
+
+.imgcont img{
+    height: 245px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 20px;
+}
