@@ -1,21 +1,14 @@
+import React from "react";
+import Api from "./api/api";
 
-
-const App = ()=> {
-
-  const getdata = async ()=>{
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-    console.log(response)
-    const data = await response.json()
-    console.log(data)
-  }
-
+function App(){
   return (
     <>
       <div>
-        <button onClick={getdata}>apiCall</button>
+        <Api/>
       </div>
     </>
   )
 }
 
-export default App
+export default App;
