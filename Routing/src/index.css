@@ -1,4 +1,8 @@
-.body{
+html body{
   background-color: black;
-  color: red;
+  
+}
+
+.parent{
+  height: 100vh;
 }

@@ -1,0 +1,27 @@
+.header{
+    background-color: aqua;
+    height: 80px;
+    border-radius: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+a{
+    margin: 10px;
+    font-size: 21px;
+    color: yellow;
+    text-decoration: none;
+}
+
+h1{
+    margin: 20px 575px;
+}
+
+p{
+    margin: 120px 318px;
+    font-size: 48px;
+}
