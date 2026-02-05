@@ -25,3 +25,15 @@ p{
     margin: 120px 318px;
     font-size: 48px;
 }
+
+.abt{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.aboutpages{
+    color: red;
+    
+}
