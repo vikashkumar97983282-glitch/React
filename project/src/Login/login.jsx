@@ -1,19 +1,23 @@
 import React from "react";
 import './login.css'
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login(){
 
     const [username,setUsername] = useState("");
     const [password,setPassword] = useState("");
     const [message,setMessage] = useState("")
+    const navigate = useNavigate();
 
     const handlelogin = (e)=>{
 
         e.preventDefault()
 
         if(username === "abc@gmail.com" && password === "1234"){
-            setMessage("login sucessfully !");
+            navigate('/home')
+            alert("login successful")
         } else {
             setMessage("login failed !");
         }
@@ -38,10 +42,10 @@ function Login(){
                     <br/>
                     <input className="box" id="check" type="checkbox"/>
                     <label htmlFor="check">Remember me</label>
-                    <a href="/forget">Forget password</a>
+                    <Link to="/forget">Forget password ?</Link>
                     <br/>
                     <br/>
-                    <button type="submit">Login</button>
+                    <button type="submit" onClick={() => <Link to="/home"/>}>Login</button>
                     <p>{message}</p>
                 </div>
             </form>

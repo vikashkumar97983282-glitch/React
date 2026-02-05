@@ -1,4 +1,4 @@
-body {
+html, body {
     margin: 0;
     background: #FF0099;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
@@ -12,6 +12,6 @@ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, F
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 46px;
+    margin: 63px;
 
 }

@@ -1,4 +1,4 @@
-import { use, useState } from "react"
+import { useState } from "react"
 import "./forget.css"
 
 function Forget(){
@@ -13,7 +13,7 @@ function Forget(){
         if (newpass !== "" && newpass === confirm){
             setNewpass("")
             setConfirm("")
-            setMes("password update sucessfully")
+            alert("password update sucessfully")
         }
         else {
             setConfirm("")
