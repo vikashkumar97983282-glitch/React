@@ -7,8 +7,8 @@
     display: flex;
     flex-wrap: wrap;
     background: #59C173; 
-background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173); 
-background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #06e02b); 
+background: linear-gradient(to right, #5D26C1, #8b79ad, #07f041);
 
 
 }

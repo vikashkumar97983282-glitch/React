@@ -1,7 +1,7 @@
 .forg{
     height: 515px;
     width: 600px;
-    background-color: aqua;
+    background-color: rgb(111, 190, 190);
 
     justify-content: center;
     display: flex;

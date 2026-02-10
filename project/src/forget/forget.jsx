@@ -1,11 +1,14 @@
 import { useState } from "react"
 import "./forget.css"
+import { useNavigate } from 'react-router-dom'
 
 function Forget(){
 
     const [newpass,setNewpass] = useState("");
     const [confirm,setConfirm] = useState("");
     const [mes,setMes] = useState("")
+
+    const navigate = useNavigate();
 
     const clk = (e)=>{
         e.preventDefault()
@@ -14,6 +17,7 @@ function Forget(){
             setNewpass("")
             setConfirm("")
             alert("password update sucessfully")
+            navigate('/')
         }
         else {
             setConfirm("")
