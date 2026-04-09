@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+
+    const navigate = useNavigate();
+
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -15,10 +21,26 @@ function Login() {
     }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Login submitted:", formData);
-  };
+
+ const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  try {
+    const res = await axios.post(
+      "http://localhost:5000/user/login",
+      formData,
+      { withCredentials: true } // important for cookies
+    );
+
+    console.log("Response:", res.data);
+    navigate("/dashboard");
+    alert("Login successful");
+
+  } catch (err) {
+    console.error("Error:", err.response?.data || err.message);
+    alert(err.response?.data || "Login failed");
+  }
+};
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100 px-4">
