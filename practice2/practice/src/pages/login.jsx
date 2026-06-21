@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +6,22 @@ import { useNavigate } from "react-router-dom";
 function Login() {
 
     const navigate = useNavigate();
+
+  useEffect(() => {
+    const clearSession = async () => {
+      try {
+        await axios.post(
+          "http://localhost:5000/user/logout",
+          {},
+          { withCredentials: true }
+        );
+      } catch (err) {
+        console.error("Session clear error:", err.response?.data || err.message);
+      }
+    };
+
+    clearSession();
+  }, []);
 
 
   const [formData, setFormData] = useState({

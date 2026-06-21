@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-
 
 
 function Dashboard() {
@@ -17,11 +15,14 @@ function Dashboard() {
         setData(res.data);
       } catch (err) {
         console.error("Error fetching dashboard data:", err.response?.data || err.message);
+        if (err.response?.status === 401 || err.response?.status === 403) {
+          navigate("/", { replace: true });
+        }
       }
     };
 
     fetchData();
-  }, []);
+  }, [navigate]);
 
   // console.log("Dashboard data:", data);
 
@@ -30,7 +31,7 @@ function Dashboard() {
     try {
       await axios.post("http://localhost:5000/user/logout", {}, { withCredentials: true });
       alert("Logged out successfully");
-      navigate("/");
+      navigate("/", { replace: true });
     } catch (err) {
       console.error("Logout error:", err.response?.data || err.message);
       alert(err.response?.data || "Logout failed");
@@ -45,12 +46,6 @@ function Dashboard() {
     { title: "Growth", value: "+18%" },
   ];
 
-  const products = [
-    { id: 1, name: "Wireless Headphones", price: "$120", stock: "In Stock" },
-    { id: 2, name: "Smart Watch", price: "$95", stock: "Low Stock" },
-    { id: 3, name: "Bluetooth Speaker", price: "$80", stock: "In Stock" },
-    { id: 4, name: "Gaming Mouse", price: "$45", stock: "Out of Stock" },
-  ];
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
