@@ -1,15 +1,19 @@
 import './App.css'
+import React from 'react'
+import HomePage from './home/homepage'
+
+
 
 function App() {
 
   return (
     <>
       <div>
-        <h1 className="text-3xl font-bold bg-blue-500 text-white p-4">hello Govinda</h1>
-        <p>welcome to our website</p>
+        {/* <h1>hellow</h1> */}
+        <HomePage />
       </div>
     </>
   )
 }
 
-export default App
+export default App;
