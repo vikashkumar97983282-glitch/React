@@ -17,7 +17,7 @@ function HomePage() {
         <div>
             {/* <h1>Home Page</h1> */}
             <Header />
-            <div className="flex flex-wrap justify-start items-center ml-25 p-4">
+            <div className="flex flex-wrap justify-center items-center mt-10">
                 {icons.map((item,idx)=>{
                     return (<IconContainer key={idx} name={item.name} icon={item.icon} iconColor={item.iconColor} bgColor={item.bgColor} />  )
                 })}
