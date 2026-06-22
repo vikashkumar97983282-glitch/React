@@ -1,5 +1,6 @@
 import Header from "./header";
 import IconContainer from "./IconContainer";
+import Appoinment from "./appoinment";
 
 
 function HomePage() {
@@ -22,6 +23,7 @@ function HomePage() {
                     return (<IconContainer key={idx} name={item.name} icon={item.icon} iconColor={item.iconColor} bgColor={item.bgColor} />  )
                 })}
             </div>
+            <Appoinment />
         </div>
     )
 }
